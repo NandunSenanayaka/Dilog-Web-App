@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Packages</title>
+    <title>Dialog Packages</title>
     <link rel="stylesheet" href="packages.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="dialog-app-container">
+    <div class="page-container">
         <!-- Sidebar -->
-        <aside class="dialog-sidebar">
-            <div class="dialog-logo">
+        <aside class="left-menu">
+            <div class="brand-logo">
                 <img src="../Assets/dialog-axiata-1-logo-png-transparent.png" alt="Dialog Logo">
             </div>
             
-            <nav class="dialog-sidebar-menu">
+            <nav class="menu-navigation">
                 <ul>
-                    <li class="dialog-active">
-                        <a href="#">
-                            <i class="fas fa-chart-bar"></i>
+                    <li>
+                        <a href="../Home/home.html">
+                            <i class="fas fa-chart-pie"></i>
                             <span>Account Summary</span>
                         </a>
                     </li>
@@ -35,10 +35,10 @@
                             <span>Pay / Reload</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="current-page">
                         <a href="#">
-                            <i class="fas fa-network-wired"></i>
-                            <span>Manage Connection</span>
+                            <i class="fas fa-box"></i>
+                            <span>Packages</span>
                         </a>
                     </li>
                     <li>
@@ -63,99 +63,216 @@
             </nav>
         </aside>
 
-        <!-- Main Content -->
-        <main class="dialog-main-content">
-            <!-- Header with user profile -->
-            <div class="dialog-header-container">
-            <header class="dialog-header">
-                <div class="dialog-user-profile">
-                    <div class="dialog-avatar">
+        <!-- Main Content Area -->
+        <div class="main-section">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="user-section">
+                    <div class="user-details">
+                        <span class="username">HARSHA S N</span>
+                        <span class="membership">Premium Member</span>
+                    </div>
+                    <div class="profile-picture">
                         <img src="../Assets/agent1.jpg" alt="User Avatar">
                     </div>
                 </div>
             </header>
-            </div>
 
-            <!-- Phone Number Card -->
-            <div class="dialog-phone-card">
-                <div class="dialog-phone-info">
-                    <div class="dialog-phone-icon">
-                        <i class="fas fa-phone-alt"></i>
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Package Filters -->
+                <aside class="filter-panel">
+                    <div class="filter-top">
+                        <h2>Filters</h2>
+                        <button class="reset-filters">Clear All</button>
                     </div>
-                    <div class="dialog-phone-details">
-                        <h2>0761775200</h2>
-                        <div class="dialog-connection-status">
-                            <span class="dialog-status-indicator"></span>
-                            <span>Connected</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="dialog-phone-type">
-                    <span>Prepaid</span>
-                </div>
-            </div>
 
-            <!-- Packages Section -->
-            <section class="dialog-packages-section">
-                <h1>Data Packages</h1>
-                
-                <div class="dialog-packages-grid">
-                    <!-- Anytime Package -->
-                    <div class="dialog-package-card">
-                        <div class="dialog-package-icon">
-                            <i class="fas fa-cloud"></i>
+                    <div class="filter-group">
+                        <h3>Package Type</h3>
+                        <div class="filter-list">
+                            <label class="filter-option">
+                                <input type="checkbox" checked> Data
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" checked> Voice
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" checked> SMS
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" checked> Combo
+                            </label>
                         </div>
-                        <h3>Anytime</h3>
-                        <button class="dialog-btn-see-more">See More</button>
                     </div>
-                    
-                    <!-- Work & Learn Package -->
-                    <div class="dialog-package-card">
-                        <div class="dialog-package-icon">
-                            <i class="fas fa-laptop"></i>
+
+                    <div class="filter-group">
+                        <h3>Validity</h3>
+                        <div class="filter-list">
+                            <label class="filter-option">
+                                <input type="checkbox"> 1 Day
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox"> 7 Days
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox"> 30 Days
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox"> Unlimited
+                            </label>
                         </div>
-                        <h3>Work & Learn</h3>
-                        <button class="dialog-btn-see-more">See More</button>
                     </div>
-                    
-                    <!-- Social Media Package -->
-                    <div class="dialog-package-card">
-                        <div class="dialog-package-icon">
-                            <i class="fab fa-facebook-f"></i>
+                </aside>
+
+                <!-- Main Package Content -->
+                <main class="package-section">
+                    <div class="package-top">
+                        <h1>All Packages</h1>
+                        <div class="sort-options">
+                            <select class="sort-dropdown">
+                                <option value="popular">Most Popular</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="data">Data: High to Low</option>
+                            </select>
                         </div>
-                        <h3>Social Media</h3>
-                        <button class="dialog-btn-see-more">See More</button>
                     </div>
-                    
-                    <!-- Unlimited Package -->
-                    <div class="dialog-package-card">
-                        <div class="dialog-package-icon">
-                            <i class="fas fa-sync-alt"></i>
+
+                    <!-- Package Cards Container -->
+                    <div class="package-grid">
+                        <!-- Data Package -->
+                        <div class="package-box data-package">
+                            <div class="package-top-section">
+                                <div class="package-category">Data Package</div>
+                                <div class="package-cost">
+                                    <span class="currency-symbol">Rs.</span>
+                                    <span class="price-amount">499</span>
+                                </div>
+                            </div>
+                            <div class="package-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>20 GB Anytime Data</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>30 Days Validity</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-moon"></i>
+                                    <span>Unlimited Night Data</span>
+                                </div>
+                            </div>
+                            <div class="package-buttons">
+                                <button class="view-more">View Details</button>
+                                <button class="buy-now">Subscribe Now</button>
+                            </div>
                         </div>
-                        <h3>Unlimited</h3>
-                        <button class="dialog-btn-see-more">See More</button>
-                    </div>
-                    
-                    <!-- Timebased Package -->
-                    <div class="dialog-package-card">
-                        <div class="dialog-package-icon">
-                            <i class="fas fa-clock"></i>
+
+                        <!-- Voice Package -->
+                        <div class="package-box voice-package">
+                            <div class="package-top-section">
+                                <div class="package-category">Voice Package</div>
+                                <div class="package-cost">
+                                    <span class="currency-symbol">Rs.</span>
+                                    <span class="price-amount">299</span>
+                                </div>
+                            </div>
+                            <div class="package-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>1000 Minutes Any Network</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>30 Days Validity</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-star"></i>
+                                    <span>Free Dialog to Dialog</span>
+                                </div>
+                            </div>
+                            <div class="package-buttons">
+                                <button class="view-more">View Details</button>
+                                <button class="buy-now">Subscribe Now</button>
+                            </div>
                         </div>
-                        <h3>Timebased</h3>
-                        <button class="dialog-btn-see-more">See More</button>
-                    </div>
-                    
-                    <!-- Night Time Package -->
-                    <div class="dialog-package-card">
-                        <div class="dialog-package-icon">
-                            <i class="fas fa-moon"></i>
+
+                        <!-- Combo Package -->
+                        <div class="package-box combo-package">
+                            <div class="best-value-tag">Best Value</div>
+                            <div class="package-top-section">
+                                <div class="package-category">Combo Package</div>
+                                <div class="package-cost">
+                                    <span class="currency-symbol">Rs.</span>
+                                    <span class="price-amount">799</span>
+                                </div>
+                            </div>
+                            <div class="package-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>30 GB Data</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>500 Minutes</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>1000 SMS</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>30 Days Validity</span>
+                                </div>
+                            </div>
+                            <div class="package-buttons">
+                                <button class="view-more">View Details</button>
+                                <button class="buy-now">Subscribe Now</button>
+                            </div>
                         </div>
-                        <h3>Night Time</h3>
-                        <button class="dialog-btn-see-more">See More</button>
+
+                        <!-- SMS Package -->
+                        <div class="package-box sms-package">
+                            <div class="package-top-section">
+                                <div class="package-category">SMS Package</div>
+                                <div class="package-cost">
+                                    <span class="currency-symbol">Rs.</span>
+                                    <span class="price-amount">99</span>
+                                </div>
+                            </div>
+                            <div class="package-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>1000 SMS Any Network</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>7 Days Validity</span>
+                                </div>
+                            </div>
+                            <div class="package-buttons">
+                                <button class="view-more">View Details</button>
+                                <button class="buy-now">Subscribe Now</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </main>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Package Details Modal -->
+    <div class="details-popup" id="packageModal">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Package Details</h2>
+                <button class="close-popup">&times;</button>
+            </div>
+            <div class="popup-body">
+                <!-- Package details will be populated dynamically -->
+            </div>
+        </div>
     </div>
 </body>
 </html>

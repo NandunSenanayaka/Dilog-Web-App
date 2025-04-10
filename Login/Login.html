@@ -17,35 +17,50 @@
       <h1 class="login-heading">Log in</h1>
 
       <p class="login-subtext">
-        Enter The Dialog mobile number / email address you signed up with
+        Enter your mobile number to receive OTP
       </p>
 
-      <div class="login-input-group">
-        <i class="fa-regular fa-user"></i>
-        <input type="text" placeholder="Dialog mobile number or email address">
-      </div>
+      <form class="login-form" id="loginForm">
+        <div class="login-input-group">
+          <i class="fas fa-mobile-alt"></i>
+          <input type="tel" placeholder="Enter mobile number" required>
+        </div>
 
-      <a href="../Home/home.html" class="login-link">
-        <button class="login-button">Login to Continue</button>
-      </a>
+        <button type="button" class="login-button get-otp">Get OTP</button>
 
-      <div class="login-divider">
-        <span>or</span>
-      </div>
+        <div class="login-input-group otp-group">
+          <i class="fas fa-key"></i>
+          <input type="text" placeholder="Enter OTP" required>
+        </div>
 
-      <button class="google-login-btn">
-        <img src="../Assets/Google Logo.png" alt="Google Logo">
-        Continue with Google
-      </button>
+        <button type="button" class="login-button" id="loginButton">Login to Continue</button>
 
-      <p class="register-prompt">
-        Don't have a <a href="#">Dialog ID</a>?
-      </p>
+        <div class="login-divider">
+          <span>or</span>
+        </div>
+
+        <button type="button" class="google-login-btn">
+          <img src="../Assets/Google Logo.png" alt="Google Logo">
+          Continue with Google
+        </button>
+
+        <p class="register-prompt">
+          Don't have a <a href="#">Dialog ID</a>?
+        </p>
+      </form>
     </div>
 
     <div class="login-image-container">
       <img src="../Assets/LOGIN.jpg" alt="Dialog Services">
     </div>
   </div>
+
+  <script>
+    // Add event listener to the login button
+    document.getElementById('loginButton').addEventListener('click', function() {
+      // Navigate to the home page
+      window.location.href = '../Home/home.html';
+    });
+  </script>
 </body>
 </html>
