@@ -543,6 +543,16 @@ body {
     font-weight: 500;
 }
 
+.package-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+
+
+
+
+
 /* Value added services */
 .value-services-grid {
     display: grid;

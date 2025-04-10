@@ -1,0 +1,300 @@
+/* Base styles and reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.dialog-app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar styles */
+.dialog-sidebar {
+    width: 250px;
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.dialog-logo {
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.dialog-logo img {
+    width: 100px;  /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 8px;
+    margin-left:38px; 
+
+    
+}
+
+.dialog-sidebar-menu ul {
+    list-style: none;
+}
+
+.dialog-sidebar-menu li {
+    margin-bottom: 5px;
+}
+
+.dialog-sidebar-menu a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #777;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.dialog-sidebar-menu li.dialog-active a {
+    color: #ff3b30;
+    font-weight: 600;
+}
+
+.dialog-sidebar-menu a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dialog-sidebar-menu i {
+    margin-right: 15px;
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Main content styles */
+.dialog-main-content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Header styles */
+.dialog-header-container{
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 30px;
+
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.dialog-user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.dialog-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.dialog-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+/* Phone card styles */
+.dialog-phone-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dialog-phone-info {
+    display: flex;
+    align-items: center;
+}
+
+.dialog-phone-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #711E6F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.dialog-phone-details h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.dialog-connection-status {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #777;
+}
+
+.dialog-status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    margin-right: 5px;
+}
+
+.dialog-phone-type {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Packages section styles */
+.dialog-packages-section {
+    padding: 10px 0;
+}
+
+.dialog-packages-section h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.dialog-packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.dialog-package-card {
+    background: linear-gradient(135deg, #711E6F, #140122);
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.dialog-package-card:hover {
+    transform: translateY(-5px);
+}
+
+.dialog-package-icon {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.dialog-package-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.dialog-btn-see-more {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 40px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dialog-btn-see-more:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .dialog-packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .dialog-sidebar {
+        width: 70px;
+        padding: 20px 0;
+    }
+    
+    .dialog-logo {
+        padding: 0 10px;
+    }
+    
+    .dialog-sidebar-menu span {
+        display: none;
+    }
+    
+    .dialog-sidebar-menu i {
+        margin-right: 0;
+        font-size: 20px;
+    }
+    
+    .dialog-sidebar-menu a {
+        justify-content: center;
+        padding: 15px 0;
+    }
+    
+    .dialog-main-content {
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .dialog-sidebar {
+        width: 0;
+        padding: 0;
+    }
+    
+    .dialog-main-content {
+        margin-left: 0;
+    }
+    
+    .dialog-packages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .dialog-phone-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .dialog-phone-type {
+        margin-top: 15px;
+        align-self: flex-end;
+    }
+}
