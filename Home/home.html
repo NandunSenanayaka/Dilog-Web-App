@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telecom Dashboard Redesign</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="../Assets/dialog-axiata-1-logo-png-transparent.png" alt="Logo">
+
+            </div>
+            <div class="user-profile">
+                <div class="user-info">
+                    <span class="user-name">HARSHA S N</span>
+                    <span class="user-status">Premium Member</span>
+                </div>
+                <div class="avatar">
+                    <img src="../Assets/agent1.jpg" alt="User Avatar">
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="content-wrapper">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <nav class="nav-menu">
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <i class="fas fa-chart-pie"></i>
+                                <span>Account Summary</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user"></i>
+                                <span>My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-wallet"></i>
+                                <span>Pay / Reload</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-network-wired"></i>
+                                <span>Manage Connections</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-star"></i>
+                                <span>Starpoints</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-question-circle"></i>
+                                <span>FAQs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-headset"></i>
+                                <span>Support</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="main-content">
+                <!-- Phone Number Card -->
+                <div class="phone-card">
+                    <div class="phone-number-wrapper">
+                        <div class="phone-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="phone-details">
+                            <h2>761775200</h2>
+                            <div class="connection-status">
+                                <span class="status-indicator"></span>
+                                <span>Connected</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-type">
+                        <span>Prepaid</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <!-- Account & Reload horizontal row -->
+                <div class="account-reload-row">
+
+                    <!-- Account Summary Section -->
+                    <section class="section account-summary-section">
+                        <div class="section-header">
+                            <h1>Account Summary</h1>
+                        </div>
+
+                            <div class="section-header">
+                        
+                                <span class="update-time">Here's info as of 07:19 PM, 09 Apr</span>
+                            </div>
+                        
+
+                        <div class="summary-container">
+                            <div class="tabs">
+                                <button class="tab active">MONEY</button>
+                                <button class="tab">DATA</button>
+                                <button class="tab">VOICE</button>
+                                <button class="tab">SMS</button>
+                            </div>
+
+                            <div class="balance-container">
+                                <div class="balance-card">
+                                    <div class="balance-info">
+                                        <h3>Prepaid Balance</h3>
+                                        <div class="balance-amount">Rs. 95.22</div>
+                                        <div class="validity">Valid till 28 Mar 2026</div>
+                                    </div>
+                                    <div class="balance-icon">
+                                        <i class="fas fa-wallet"></i>
+                                    </div>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn-outline">TRANSACTIONS</button>
+                                    <button class="btn btn-primary">RELOAD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Quick Reload Section -->
+                    <section class="section quick-reload-section">
+                        <div class="section-header">
+                            <h2>Quick reload</h2>
+                        </div>
+
+                        <div class="quick-reload-grid">
+                            <div class="reload-card">
+                                <div class="amount">Rs.50</div>
+                                <button class="btn-buy">BUY</button>
+                            </div>
+                            <div class="reload-card">
+                                <div class="amount">Rs.100</div>
+                                <button class="btn-buy">BUY</button>
+                            </div>
+                            <div class="reload-card">
+                                <div class="amount">Rs.150</div>
+                                <button class="btn-buy">BUY</button>
+                            </div>
+                            <div class="reload-card">
+                                <div class="amount">Rs.200</div>
+                                <button class="btn-buy">BUY</button>
+                            </div>
+                            <div class="reload-card">
+                                <div class="amount">Rs.250</div>
+                                <button class="btn-buy">BUY</button>
+                            </div>
+                            <div class="reload-card">
+                                <div class="amount">Rs.300</div>
+                                <button class="btn-buy">BUY</button>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+
+                <!-- Ringing Tones Section -->
+                <section class="section">
+                    <div class="section-header">
+                        <h2>Ringing Tones</h2>
+                    </div>
+
+                    <div class="ringing-tones-card">
+                        <div class="tones-content">
+                            <div class="tones-label">Tones</div>
+                            <div class="tones-name">
+                                Ringing
+                                <span class="indicator-dot"></span>
+                            </div>
+                        </div>
+                        <div class="package-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <!-- <div class="tones-image">
+                            <img src="./Assets/agent1.jpg" alt="Person listening to music">
+                        </div> -->
+                    </div>
+                </section>
+
+                <!-- All Packages Section -->
+                <section class="section">
+                    <div class="section-header">
+                        <h2>All Packages</h2>
+                    </div>
+
+                    <div class="packages-grid">
+                        <div class="package-card">
+                            <div class="package-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="package-name">My Package</div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="package-name">Data packages</div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <div class="package-name">Combo packages</div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="package-name">Voice Packages</div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="package-name">IDD Packages</div>
+                        </div>
+                        <div class="package-card">
+                            <div class="package-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <div class="package-name">Roaming Packages</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Value Added Services Section -->
+                <section class="section">
+                    <div class="section-header">
+                        <h2>Value added services</h2>
+                        <a href="#" class="link-primary">MY SERVICES</a>
+                    </div>
+
+                    <div class="value-services-grid">
+                        <div class="value-service-card explore">
+                            <div class="service-icon">
+                                <i class="fas fa-compass"></i>
+                            </div>
+                            <div class="service-name">Explore</div>
+                        </div>
+                        <div class="value-service-card sports">
+                            <div class="service-icon">
+                                <i class="fas fa-futbol"></i>
+                            </div>
+                            <div class="service-name">Sports</div>
+                        </div>
+                        <div class="value-service-card news">
+                            <div class="service-icon">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <div class="service-name">News</div>
+                        </div>
+                        <div class="value-service-card lifestyle">
+                            <div class="service-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="service-name">Life Style</div>
+                        </div>
+                    </div>
+
+                    <div class="show-more-btn">
+                        <span>Show more</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </section>
+
+                <!-- Other Services Section -->
+                <section class="section">
+                    <div class="section-header">
+                        <h2>Other services</h2>
+                    </div>
+
+                    <div class="other-services-grid">
+                        <div class="other-service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <div class="service-name">Share Credit</div>
+                        </div>
+                        <div class="other-service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-arrow-up"></i>
+                            </div>
+                            <div class="service-name">Upgrade to postpaid</div>
+                        </div>
+                        <div class="other-service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-money-bill"></i>
+                            </div>
+                            <div class="service-name">Auto Loan</div>
+                        </div>
+                        <div class="other-service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <div class="service-name">Dialog offers</div>
+                        </div>
+                        <div class="other-service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-ticket-alt"></i>
+                            </div>
+                            <div class="service-name">Scratch Cards</div>
+                        </div>
+                        <div class="other-service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="service-name">Suraksha Parental Control</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- My Packages Section -->
+                <section class="section">
+                    <div class="section-header">
+                        <h2>My packages</h2>
+                    </div>
+
+                    <div class="my-package-card">
+                        <div class="package-details">
+                            <div class="package-label">Tariff plan</div>
+                            <div class="package-value">1 FOR 1 plan</div>
+                        </div>
+                        <button class="btn btn-text">CHANGE</button>
+                    </div>
+                </section>
+
+                <!-- International Services Section -->
+                <section class="section">
+                    <div class="section-header">
+                        <h2>International Services</h2>
+                    </div>
+
+                    <div class="international-services-grid">
+                        <div class="int-service-card roaming">
+                            <div class="int-service-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <div class="int-service-name">Roaming</div>
+                        </div>
+                        <div class="int-service-card idd">
+                            <div class="int-service-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="int-service-name">IDD</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Club Vision Section -->
+                <section class="section">
+                    <div class="section-header">
+                        <h2>Club Vision</h2>
+                    </div>
+
+                    <div class="club-vision-grid">
+                        <div class="points-card">
+                            <div class="points-amount">14,697</div>
+                            <div class="points-label">tier points</div>
+                            <div class="points-date">Based as of 28 Feb 2025</div>
+                        </div>
+                        <div class="club-card">
+                            <div class="club-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <div class="club-name">Dialog offers</div>
+                        </div>
+                        <div class="club-card">
+                            <div class="club-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="club-name">Exclusives</div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
