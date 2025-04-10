@@ -13,7 +13,7 @@ body {
     font-size: 16px;
 }
 
-/* Main layout containers */
+/* Main layout  */
 .app-container {
     min-height: 100vh;
     display: flex;
@@ -371,10 +371,11 @@ body {
 
 
 /* Quick reload section */
+
 /* Container sections horizontally */
 .horizontal-container {
     display: flex;
-    gap: 20px; /* Space between the sections */
+    gap: 20px; 
 }
 
 /* Make sure each section takes up equal width */
@@ -391,33 +392,6 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
-
-/* .tabs {
-    display: flex;
-    border-bottom: 1px solid #eee;
-}
-
-.tab {
-    flex: 1;
-    padding: 15px;
-    text-align: center;
-    background: none;
-    border: none;
-    font-weight: bold;
-    color: #777;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.tab.active {
-    color: #711E6F;
-    box-shadow: inset 0 -2px 0 #711E6F;
-}
-
-.tab:hover {
-    background-color: #f3eeff;
-} */
-
 
 
 
@@ -544,8 +518,8 @@ body {
 }
 
 .package-link {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit color from parent */
+    text-decoration: none; 
+    color: inherit; 
 }
 
 
@@ -691,7 +665,6 @@ body {
 /* International services */
 .international-services-grid {
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     gap: 15px;
 }
 
