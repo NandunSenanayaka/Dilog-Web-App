@@ -81,6 +81,11 @@ body {
     object-fit: cover;
 }
 
+
+
+
+
+
 /* Sidebar navigation */
 .sidebar {
     width: 250px;
@@ -131,6 +136,11 @@ body {
     padding: 30px;
     overflow-y: auto;
 }
+
+
+
+
+
 
 /* Phone number card */
 .phone-card {
@@ -192,6 +202,11 @@ body {
     margin-left: 8px;
 }
 
+
+
+
+
+
 /* Section styling */
 .section {
     margin-bottom: 40px;
@@ -228,6 +243,10 @@ body {
     font-weight: bold;
     font-size: 14px;
 }
+
+
+
+
 
 /* Account summary card */
 .summary-container {
@@ -334,7 +353,7 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #5000ca;
+    background-color: #711E6F;
 }
 
 .btn-text {
@@ -347,8 +366,12 @@ body {
     background-color: #f3eeff;
 }
 
+
+
+
+
 /* Quick reload section */
-/* Container to align the sections horizontally */
+/* Container sections horizontally */
 .horizontal-container {
     display: flex;
     gap: 20px; /* Space between the sections */
@@ -359,6 +382,7 @@ body {
     flex: 1;
 
 }
+
 
 /* Adjust the account summary card */
 .summary-container {
@@ -393,6 +417,11 @@ body {
 .tab:hover {
     background-color: #f3eeff;
 } */
+
+
+
+
+
 
 /* Quick reload section */
 .quick-reload-grid {
@@ -433,6 +462,10 @@ body {
 .btn-buy:hover {
     color: #5000ca;
 }
+
+
+
+
 
 
 /* Ringing tones card */
@@ -477,11 +510,13 @@ body {
 
 
 
+
+
 /* Packages grid */
 .packages-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 15px;
+    gap: 25px;
 }
 
 .package-card {
@@ -512,7 +547,7 @@ body {
 .value-services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
+    gap: 35px;
     margin-bottom: 15px;
 }
 
@@ -547,19 +582,19 @@ body {
 }
 
 .value-service-card.explore {
-    background: linear-gradient(135deg, #2196F3, #1976D2);
+    background: linear-gradient(135deg, #2196F3, #000000);
 }
 
 .value-service-card.sports {
-    background: linear-gradient(135deg, #E91E63, #C2185B);
+    background: linear-gradient(135deg, #E91E63, #000000);
 }
 
 .value-service-card.news {
-    background: linear-gradient(135deg, #673AB7, #512DA8);
+    background: linear-gradient(135deg, #673AB7, #100131);
 }
 
 .value-service-card.lifestyle {
-    background: linear-gradient(135deg, #009688, #00796B);
+    background: linear-gradient(135deg, #009688, #001d19);
 }
 
 .service-icon {
@@ -585,11 +620,15 @@ body {
     color: #6200ee;
 }
 
+
+
+
+
 /* Other services */
 .other-services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 15px;
+    gap: 25px;
 }
 
 .other-service-card {
@@ -608,7 +647,7 @@ body {
 
 .other-service-card .service-icon {
     font-size: 24px;
-    color: #6200ee;
+    color: #711E6F;
     margin-bottom: 15px;
 }
 
@@ -642,7 +681,7 @@ body {
 /* International services */
 .international-services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     gap: 15px;
 }
 
@@ -672,11 +711,11 @@ body {
 }
 
 .int-service-card.roaming {
-    background: linear-gradient(135deg, #009688, #00796B);
+    background: linear-gradient(135deg, #009688, #012521);
 }
 
 .int-service-card.idd {
-    background: linear-gradient(135deg, #E91E63, #C2185B);
+    background: linear-gradient(135deg, #E91E63, #2b0313);
 }
 
 .int-service-icon {
@@ -737,7 +776,7 @@ body {
 
 .club-icon {
     font-size: 24px;
-    color: #6200ee;
+    color: #711E6F;
     margin-bottom: 12px;
 }
 
