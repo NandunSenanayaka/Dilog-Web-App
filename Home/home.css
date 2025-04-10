@@ -36,19 +36,16 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    backdrop-filter: blur(10px);
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    
+
+.logo-img {
+    width: 80px;  /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 8px;
+    margin-left:38px;
 }
 
-.logo img {
-    height: 50px;
-    width: auto;
-}
 
 .user-profile {
     display: flex;
@@ -75,7 +72,7 @@ body {
     height: 40px;
     border-radius: 50%;
     overflow: hidden;
-    border: 2px solid #bb86fc;
+    border: 2px solid #9c9c9c;
 }
 
 .avatar img {
@@ -88,9 +85,8 @@ body {
 .sidebar {
     width: 250px;
     background-color: white;
-    box-shadow: 2px 0 5px rgba(196, 90, 90, 0.05);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
     padding: 24px 0;
-    
 }
 
 .nav-menu ul {
@@ -107,7 +103,7 @@ body {
     padding: 12px 24px;
     color: #555;
     text-decoration: none;
-    /* transition: all 0.3s ease; */
+    transition: all 0.3s ease;
     border-left: 3px solid transparent;
 }
 
@@ -227,58 +223,10 @@ body {
 }
 
 .link-primary {
-    color: #711E6F;
+    color: #F2561A;
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
-}
-/* Layout wrapper for horizontal alignment */
-.account-reload-row {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin-bottom: 40px;
-}
-
-.account-summary-section {
-    flex: 2;
-    min-width: 300px;
-}
-
-.quick-reload-section {
-    flex: 1;
-    min-width: 280px;
-}
-
-/* Existing styles - no change */
-.section {
-    margin-bottom: 40px;
-}
-
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.section-header h1, .section-header h2 {
-    font-weight: bold;
-    color: #333;
-}
-
-.section-header h1 {
-    font-size: 28px;
-}
-
-.section-header h2 {
-    font-size: 24px;
-}
-
-.update-time {
-    font-size: 14px;
-    color: #777;
 }
 
 /* Account summary card */
@@ -288,6 +236,8 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
+
+
 
 .tabs {
     display: flex;
@@ -303,11 +253,12 @@ body {
     font-weight: bold;
     color: #777;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .tab.active {
     color: #F2561A;
-    box-shadow: inset 0 -2px 0 #711E6F;
+    box-shadow: inset 0 -2px 0 #F2561A;
 }
 
 .tab:hover {
@@ -319,7 +270,7 @@ body {
 }
 
 .balance-card {
-    background-color: #711e70;
+    background-color: #711E6F;
     color: white;
     border-radius: 12px;
     padding: 24px;
@@ -369,7 +320,7 @@ body {
 
 .btn-outline {
     background-color: transparent;
-    border: 1px solid #000000;
+    border: 1px solid #711E6F;
     color: #000000;
 }
 
@@ -383,7 +334,7 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #ED1C24;
+    background-color: #5000ca;
 }
 
 .btn-text {
@@ -396,11 +347,58 @@ body {
     background-color: #f3eeff;
 }
 
-/* Quick reload grid updated for smaller layout */
+/* Quick reload section */
+/* Container to align the sections horizontally */
+.horizontal-container {
+    display: flex;
+    gap: 20px; /* Space between the sections */
+}
+
+/* Make sure each section takes up equal width */
+.section {
+    flex: 1;
+
+}
+
+/* Adjust the account summary card */
+.summary-container {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* .tabs {
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+
+.tab {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: #777;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab.active {
+    color: #711E6F;
+    box-shadow: inset 0 -2px 0 #711E6F;
+}
+
+.tab:hover {
+    background-color: #f3eeff;
+} */
+
+/* Quick reload section */
 .quick-reload-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
 }
 
 .reload-card {
@@ -426,21 +424,15 @@ body {
 .btn-buy {
     background: none;
     border: none;
-    color: #ED1C24;
+    color: #711E6F;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn-buy:hover {
-    color: #FAB220;
+    color: #5000ca;
 }
-
-
-
-
-
-
 
 
 /* Ringing tones card */
@@ -475,12 +467,21 @@ body {
     margin-left: 8px;
 }
 
+.tones-image img {
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
 
 /* Packages grid */
 .packages-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 25px;
+    gap: 15px;
 }
 
 .package-card {
@@ -511,7 +512,7 @@ body {
 .value-services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 25px;
+    gap: 15px;
     margin-bottom: 15px;
 }
 
@@ -546,19 +547,19 @@ body {
 }
 
 .value-service-card.explore {
-    background: linear-gradient(135deg, #2196F3, #000000);
+    background: linear-gradient(135deg, #2196F3, #1976D2);
 }
 
 .value-service-card.sports {
-    background: linear-gradient(135deg, #E91E63, #000000);
+    background: linear-gradient(135deg, #E91E63, #C2185B);
 }
 
 .value-service-card.news {
-    background: linear-gradient(135deg, #673AB7, #1a0d38);
+    background: linear-gradient(135deg, #673AB7, #512DA8);
 }
 
 .value-service-card.lifestyle {
-    background: linear-gradient(135deg, #009688, #023c35);
+    background: linear-gradient(135deg, #009688, #00796B);
 }
 
 .service-icon {
@@ -588,7 +589,7 @@ body {
 .other-services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 25px;
+    gap: 15px;
 }
 
 .other-service-card {
@@ -607,7 +608,7 @@ body {
 
 .other-service-card .service-icon {
     font-size: 24px;
-    color: #711E6F;
+    color: #6200ee;
     margin-bottom: 15px;
 }
 
@@ -627,7 +628,6 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-
 .package-label {
     font-size: 14px;
     color: #777;
@@ -639,21 +639,10 @@ body {
     font-weight: bold;
 }
 
-.btn.btn-text {
-    background-color: #6200ee; /* Replace with your desired color */
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
 /* International services */
 .international-services-grid {
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
 }
 
@@ -748,7 +737,7 @@ body {
 
 .club-icon {
     font-size: 24px;
-    color: #711E6F;
+    color: #6200ee;
     margin-bottom: 12px;
 }
 
@@ -819,7 +808,7 @@ body {
     }
 }
 
-/* @media (max-width: 576px) {
+@media (max-width: 576px) {
     .phone-card {
         flex-direction: column;
         align-items: flex-start;
@@ -846,4 +835,4 @@ body {
     .tones-content {
         margin-bottom: 15px;
     }
-} */
+}
