@@ -184,8 +184,10 @@ body {
 }
 
 .login-image-container img {
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 80px;
     object-fit: cover;
     object-position: center;
     border-radius: 20px;
