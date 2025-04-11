@@ -101,7 +101,7 @@ body {
 }
 
 .nav-menu li.active a {
-    background: #711E6F;
+    background: #F2561A;
     color: white;
 }
 
@@ -812,8 +812,8 @@ body {
 }
 
 .banner {
-    /* background: linear-gradient(135deg, #8b1eff 0%, #ff1e56 100%); */
-    background-image: url(../Assets/banner.jpg);
+    background: linear-gradient(135deg, #711E6F 0%, #2196F3 100%);
+    
     background-size: 100% 170%;
     background-repeat: no-repeat;
 
@@ -942,27 +942,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f8f8f8;
+    background: #711E6F;
     padding: 24px;
     border-radius: 12px;
 }
 
 .balance-info h3 {
     font-size: 14px;
-    color: #666;
+    color: #f5f2f2;
     margin-bottom: 8px;
 }
 
 .balance-amount {
     font-size: 24px;
     font-weight: 600;
-    color: #333;
+    color: #e4e4e4;
     margin-bottom: 4px;
 }
 
 .validity {
     font-size: 12px;
-    color: #666;
+    color: #ebebeb;
 }
 
 .balance-icon {

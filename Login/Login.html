@@ -20,20 +20,20 @@
         Enter your mobile number to receive OTP
       </p>
 
-      <form class="login-form" id="loginForm">
+      <form class="login-form" id="loginForm" action="../Home/home.html" method="get">
         <div class="login-input-group">
           <i class="fas fa-mobile-alt"></i>
-          <input type="tel" placeholder="Enter mobile number" required>
+          <input type="tel" placeholder="Enter mobile number" >
         </div>
 
-        <button type="button" class="login-button get-otp">Get OTP</button>
+        <button type="submit" class="login-button get-otp">Get OTP</button>
 
         <div class="login-input-group otp-group">
           <i class="fas fa-key"></i>
-          <input type="text" placeholder="Enter OTP" required>
+          <input type="text" placeholder="Enter OTP" >
         </div>
 
-        <button type="button" class="login-button" id="loginButton">Login to Continue</button>
+        <button type="submit" class="login-button">Login to Continue</button>
 
         <div class="login-divider">
           <span>or</span>
@@ -54,13 +54,5 @@
       <img src="../Assets/LOGIN.jpg" alt="Dialog Services">
     </div>
   </div>
-
-  <script>
-    // Add event listener to the login button
-    document.getElementById('loginButton').addEventListener('click', function() {
-      // Navigate to the home page
-      window.location.href = '../Home/home.html';
-    });
-  </script>
 </body>
 </html>
